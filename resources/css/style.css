@@ -19,10 +19,40 @@
   padding: 2rem 0;
 }
 
+.forty h4 {
+  font-size: 1.2rem;
+}
+
+.forty p {
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+.forty a {
+  font-size: .5rem;
+}
+
+.sub-media{
+  display: flex;
+  flex-direction: row;
+  padding:1rem;
+  border:1px solid grey;
+}
+
+.sub-content{
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
 
 html{
   font-size: 16px;
   font-family: Helvetica, sans-serif;
+}
+
+a { 
+  text-decoration: none;
 }
 
 /* Header */
@@ -83,6 +113,10 @@ header .flex {
     display: none;
   }
 
+  .colmar-logo{
+    display: none;
+  }
+
   .menu ul.mobile-menu {
     display: block;
   }
@@ -91,6 +125,13 @@ header .flex {
 @media only screen and (max-width: 560px) {
   header div span {
     display: none;
+  }
+  .colmar-logo{
+    display: none;
+  }
+
+  .menu ul.mobile-menu {
+    display: block;
   }
 }
 
@@ -180,13 +221,91 @@ header .flex {
   /*justify-content: space-between;*/
 }
 
-/* 60_40 */
+/* one */
 
 .one {
-  background-color: #eee;
+  background-color: #E2E2E3;
+}
+
+.one .forty{
+  justify-content:center;
+}
+
+.one a{
+  font-size: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #333;
+  color: #FFF;
+  border: 1px #333 solid;
+  text-align: center;
+}
+
+.one a:hover{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #FFF;
+  color: #333;
+  border: 1px #333 solid;
+  text-align: center;
+}
+
+.banner{
+  text-align: center;
 }
 
 
-.hold button{
 
+/* three */
+
+.banner1 h1{
+  background-color: #eee;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+.three{
+  background-color: #eee;
+}
+
+.full{
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.3hold{ /* This code is not being accepted */
+  display: flex;
+  color: green;
+}
+
+body > section.supporting.three > div > div:nth-child(1), /* had to resort to this but I know its not good */
+body > section.supporting.three > div > div:nth-child(2){
+  display: flex;
+}
+
+.sub-content2{
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFF;
+
+}
+
+.sub-content2 h4{
+  padding: 0;
+}
+
+.sub-content2 p{
+  padding: 0;
+}
+
+.sub-media-learn{
+  width: 200px;
+  padding: 1rem;
+}
+
+.sub-media-learn .media-container{
+  width: 100%;
 }
