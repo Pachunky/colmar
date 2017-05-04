@@ -13,7 +13,14 @@
 .sixty {
   width: 60%;
   padding: 2rem 1.5rem 2rem 0;
+}
+
+.two .sixty{
   border-right: 1px solid rgb(245, 245, 245);
+}
+
+.orien{
+  border-bottom: 1px solid rgb(245, 245, 245); 
 }
 
 .forty {
@@ -40,8 +47,6 @@
   display: flex;
   flex-direction: row;
   padding:1rem;
-  border:1px solid grey;
-  
 }
 
 .sub-content{
@@ -139,9 +144,72 @@ header .flex {
   .menu ul.mobile-menu {
     display: block;
   }
+
+  header{
+    height: 2rem;
+  }
+  .sixty{
+    display:none;
+  }
+  .forty{
+    width: 100%;
+  }
+  .forty .sub-media{
+    display: block;
+  }
+  .medimg{
+    display: none!important;
+  }
+  body > section.supporting.two > div.forty > div:nth-child(3){
+    background-color: #ffffff!important;
+  }
+  
+  .three{
+    background-color: #ffffff!important;
+  }
+
+  .three p{
+    display: none;
+  }
+  .three img{
+    display: none;
+  }
+  .three-hold{
+    flex-direction:column;
+  }
+  .sub-media-learn{
+    margin: .2rem!important;
+  }
+  .sub-content2{
+    background-color: #eee!important;
+  }
+
+  .four .forty .sub-media{
+    display: none;
+  }
+  .mobvid{
+    margin: 0;
+    width: 100%;
+  }
+  .list{
+    display:none;
+  }
+  footer{
+    border: none!important;
+    padding: 1rem 0 2rem;
+  }
 }
 
 
+@media only screen and (min-width: 560px) {
+  .mobimg{
+    display:none;
+  }
+  .mobvid{
+    display:none;
+  }
+
+}
 /* Header */
 
 header {
@@ -184,40 +252,7 @@ ul li {
 header .flex {
   justify-content: flex-end;
 }
-/* NEEDS ATTENTION */
 
-/*
-@media only screen and (max-width: 1024px) {
-  header {
-    padding-top: 0;
-    height: 22rem;
-  }
-
-  nav.container {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .menu ul {
-    display: none;
-  }
-
-  .menu ul.mobile-menu {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 560px) {
-  header div span {
-    display: none;
-  }
-
-  header {
-    height: 17rem;
-  }
-}
-*/
 
 /* Main Content */
 
@@ -260,7 +295,11 @@ header .flex {
   text-align: center;
 }
 
+/* two */
 
+body > section.supporting.two > div.forty > div:nth-child(3){
+  background-color: #eee;
+}
 
 /* three */
 
@@ -280,7 +319,6 @@ header .flex {
 
 .three-hold {
   display: flex;
-  color:green;
 }
 
 
@@ -323,4 +361,20 @@ body > section.supporting.three > div > div:nth-child(2){
 
 .sub-media-learn .sub-media-learn {
   width: 33%;
+}
+
+footer{
+  border-top: 1px solid grey;
+}
+
+.bottom{
+  display:flex;
+  justify-content:space-between;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.list ul{
+  margin-top:0;
+  margin-bottom: 3rem;
 }
