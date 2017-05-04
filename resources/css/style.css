@@ -1,5 +1,9 @@
 /* Universal CSS */
 
+.media-container {
+  overflow: hidden;
+}
+
 .media-container img,
 .media-container video {
   display: block;
@@ -37,6 +41,7 @@
   flex-direction: row;
   padding:1rem;
   border:1px solid grey;
+  
 }
 
 .sub-content{
@@ -44,6 +49,7 @@
   display: flex;
   flex-direction: column;
   justify-content:center;
+  width:65%;
 }
 
 html{
@@ -258,31 +264,38 @@ header .flex {
 
 /* three */
 
-.banner1 h1{
-  background-color: #eee;
+.three{
+ /* background-color: #eee;
+  text-align:center;*/
+  padding: 2rem 3.5rem;
+  background-color: rgb(245, 245, 245);
+}
+
+.three h1{
+  /*background-color: #eee;*/
   text-align: center;
   margin: 0;
   padding: 2rem;
 }
 
-.three{
-  background-color: #eee;
+.three-hold {
+  display: flex;
+  color:green;
 }
+
+
 
 .full{
   border: 1px solid black;
   margin: 0 auto;
 }
 
-.3hold{ /* This code is not being accepted */
-  display: flex;
-  color: green;
-}
 
-body > section.supporting.three > div > div:nth-child(1), /* had to resort to this but I know its not good */
+
+/*body > section.supporting.three > div > div:nth-child(1),  had to resort to this but I know its not good 
 body > section.supporting.three > div > div:nth-child(2){
   display: flex;
-}
+}*/
 
 .sub-content2{
   padding:1rem;
@@ -301,11 +314,13 @@ body > section.supporting.three > div > div:nth-child(2){
   padding: 0;
 }
 
-.sub-media-learn{
-  width: 200px;
-  padding: 1rem;
+.sub-media-learn {
+  flex-basis: 33%;
+  margin: 1rem;
+  background-color: white;
+
 }
 
-.sub-media-learn .media-container{
-  width: 100%;
+.sub-media-learn .sub-media-learn {
+  width: 33%;
 }
