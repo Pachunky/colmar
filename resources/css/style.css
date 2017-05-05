@@ -119,7 +119,6 @@ header .flex {
 @media only screen and (max-width: 1024px) {
   header {
     padding-top: 0;
-    height: 22rem;
   }
 
   nav.container {
@@ -336,6 +335,7 @@ footer{
     padding:0;
     margin-bottom:25px;
     position:relative;
+    width:80%;
   }
 
   header{
@@ -344,6 +344,11 @@ footer{
   .one .sixty, .two .sixty{
     display:none;
   }
+
+  body > section.supporting.one{
+    padding: 0;
+  }
+
   .forty{
     width: 100%;
   }
@@ -435,5 +440,28 @@ footer{
   footer{
     border: none!important;
     padding: 1rem 0 2rem;
+  }
+  .mobban{
+    width:100%;
+    height: 11.25rem;
+    background-image: url("banner.jpg");
+    background-size: cover;
+  }
+  body > section.supporting.one > div.forty{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    padding-bottom: 1rem;
+
+  }
+
+  body > section.supporting.two{
+    margin: 0;
+    width: 100%;
+    padding: 0!important;
+  }
+
+  .sub-media{
+    padding: 0;
   }
 }
