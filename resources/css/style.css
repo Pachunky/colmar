@@ -1,4 +1,7 @@
 /* Universal CSS */
+html {
+  font-size: 16px;
+}
 
 .media-container {
   overflow: hidden;
@@ -39,9 +42,14 @@
   padding-bottom: .5rem;
 }
 
-.forty a {
-  font-size: .5rem;
+a {
+  text-decoration: none;
+  color: inherit;
 }
+
+/*.forty a {
+  font-size: .5rem;
+}*/
 
 .sub-media{
   display: flex;
@@ -133,87 +141,16 @@ header .flex {
   }
 }
 
-@media only screen and (max-width: 560px) {
-  header div span {
-    display: none;
-  }
-  .colmar-logo{
-    display: none;
-  }
-
-  .menu ul.mobile-menu {
-    display: block;
-  }
-
-  header{
-    height: 2rem;
-  }
-  .sixty{
-    display:none;
-  }
-  .forty{
-    width: 100%;
-  }
-  .forty .sub-media{
-    display: block;
-  }
-  .medimg{
-    display: none!important;
-  }
-  body > section.supporting.two > div.forty > div:nth-child(3){
-    background-color: #ffffff!important;
-  }
-  
-  .three{
-    background-color: #ffffff!important;
-  }
-
-  .three p{
-    display: none;
-  }
-  .three img{
-    display: none;
-  }
-  .three-hold{
-    flex-direction:column;
-  }
-  .sub-media-learn{
-    margin: .2rem!important;
-  }
-  .sub-content2{
-    background-color: #eee!important;
-  }
-
-  .four .forty .sub-media{
-    display: none;
-  }
-  .mobvid{
-    margin: 0;
-    width: 100%;
-  }
-  .list{
-    display:none;
-  }
-  footer{
-    border: none!important;
-    padding: 1rem 0 2rem;
-  }
-}
 
 
-@media only screen and (min-width: 560px) {
-  .mobimg{
-    display:none;
-  }
-  .mobvid{
-    display:none;
-  }
 
-}
+
+ 
+
 /* Header */
 
 header {
-  border-bottom: 1px solid black;
+  /*border-bottom: 1px solid black;*/
 }
 
 nav {
@@ -301,6 +238,10 @@ body > section.supporting.two > div.forty > div:nth-child(3){
   background-color: #eee;
 }
 
+.mobimg {
+    display:none !important;
+  }
+
 /* three */
 
 .three{
@@ -377,4 +318,122 @@ footer{
 .list ul{
   margin-top:0;
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 560px) {
+  header div span {
+    display: none;
+  }
+  .colmar-logo{
+    display: none;
+  }
+
+  .menu ul.mobile-menu {
+    /*display: block;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0;
+    margin-bottom:25px;
+    position:relative;
+  }
+
+  header{
+    height: 2rem;
+  }
+  .one .sixty, .two .sixty{
+    display:none;
+  }
+  .forty{
+    width: 100%;
+  }
+
+  .supporting {
+    padding: 0 1rem;
+    margin-top: 40px;
+  }
+
+   .supporting .forty {
+    width: 100%;
+  }
+
+  .forty .sub-media {
+    display: block;
+    width:100%;
+  }
+  .medimg{
+    display: none!important;
+  }
+
+  .mobimg {
+    display: block !important;
+  }
+
+  body > section.supporting.two > div.forty > div:nth-child(3){
+    background-color: #ffffff!important;
+  }
+  
+
+.three {
+    padding: 2rem 1rem;
+    background-color: inherit;
+  }
+
+  .three p{
+    display: none;
+  }
+   .three img{
+    display: none;
+  }
+
+  .three-hold{
+    flex-direction:column;
+  }
+  .two .sixty{
+    display: none;
+  }
+
+  .two .forty {
+    width:100%;
+  }
+
+   .two .forty .three-hold{
+    flex-direction:column;
+  }
+
+ .two .text-content {
+    max-width: 14rem;
+    padding: 1rem;
+  }
+
+  .sub-media-learn{
+    margin: .2rem!important;
+  }
+  .sub-content2{
+    background-color: #eee!important;
+  }
+
+  .four .sixty h3,
+  .four .sixty p,
+  .four .forty {
+    display: none;
+  }
+
+  .four .forty .sub-media{
+    display: none;
+  }
+
+
+  .four .sixty {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+  }
+  .list{
+    display:none;
+  }
+  footer{
+    border: none!important;
+    padding: 1rem 0 2rem;
+  }
 }
